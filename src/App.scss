@@ -1,0 +1,292 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Bahnschrift SemiBold";
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+
+  .logInWithGoogle {
+    cursor: pointer;
+    border: none;
+    border-radius: 3px;
+    padding: 10px;
+    color: rgb(231, 164, 175);
+    border-radius: 6px;
+    font-weight: bold;
+    font-family: "Bahnschrift SemiBold";
+    font-size: 20px;
+  }
+
+  .loginCenter {
+    overflow: hidden;
+    background-color: pink;
+    padding: 35px 60px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .name {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .logInAcessWords {
+      font-weight: bold;
+      font-size: 20px;
+      
+    }
+  }
+}
+.navbar {
+  width: 100%;
+  background-color: pink;
+  height: 9vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  .pictureAndImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 50px;
+  }
+  .homeLink {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  margin: 12px;
+  font-size: 20px;
+  }
+  .profileLink {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  margin: 12px;
+  }
+  .loginLink {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  margin: 12px;
+  font-size: 20px;
+  }
+  .aboutUsLink {
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  margin: 12px;
+  font-size: 20px;
+  }
+  .userName {
+    font-size: 20px;
+    margin: 12px;
+    color: white;
+  }
+  .profilePicture {
+    font-size: 15px;
+    border-radius: 50%;
+    margin: 12px;
+  }
+  .signOutButton {
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    margin-right: 5px;
+    color: rgb(231, 164, 175);
+    font-family: "Bahnschrift SemiBold";
+    cursor: pointer;
+    margin-left: 8px;
+    padding: 5px;
+
+  }
+}
+.homeDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 10px;
+  flex-direction: column;
+  .gitHubLink {
+    font-size: 20px;
+    color: rgb(231, 164, 175);
+  }
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .Fab {
+    background-color: rgb(231, 164, 175);
+  }
+  .Fab:hover {
+    background-color: rgb(231, 138, 154);
+  }
+  .createANewfolderOnProfilePage {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .userNameOnProfilePage {
+    font-size: 20px;
+  }
+.profilePictureOnProfilePage {
+    margin-top: 50px;
+    border-radius: 35px;
+  }
+.yourFoldersH1OnProfilePage {
+    margin-right: 1300px;
+  }
+  .foldersOnProfilePage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    .divInDiv {
+      position: relative;
+      flex: 0 0 calc(33.33% - 16px); 
+      max-width: calc(33.33% - 140px); 
+      height: 150px; 
+      border: 1px solid rgb(231, 164, 175);
+      box-sizing: border-box;
+      margin-bottom: 16px; 
+      border-radius: 18px;
+    }
+    .editFolderButton {
+      position: absolute;
+      top: 0;
+      right: 0;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 1s ease-in-out; /* Add a 1-second delay */
+    }
+    .divInDiv:hover .editFolderButton {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+.popUpDiv {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  height: 350px;
+  width: 500px;
+  overflow: auto; // Enable scrolling if content exceeds the height
+
+  .create {
+    background-color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 6px;
+    color: rgb(231, 164, 175);
+    border: 2.5px solid rgb(231, 164, 175);
+    font-family: "Bahnschrift SemiBold";
+    cursor: pointer;
+    padding: 5px;
+    margin-top: 30px;
+    margin-left: 380px;
+  }
+  .create:hover {
+    background-color: rgb(227, 203, 203);
+  }
+
+  .creatingAFolder {
+    font-size: 20px;
+  }
+  .name {
+    font-size: 20px;
+    text-align: left;
+  }
+  .inputForFolders {
+    border-radius: 6px;
+    height: 25px;
+    width: 380px;
+    border: 2.5px solid rgb(231, 164, 175);
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 0 0 2px pink;
+  }
+  .inputForFolders::placeholder {
+  font-weight: bold;
+  font-size: 16px;
+  }
+  .divForCheckBox {
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 20px;
+    margin-right: 140px;
+  }
+  .onlyYou {
+    font-size: 20px;
+    color: gray;
+  }
+}
+.onClickForFoldersPage {
+  cursor: pointer;
+}
+.onClickForFoldersPage:hover {
+  background-color: lightgray;
+}
+.folders {
+  margin-top: 70px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.foldersName {
+  cursor: pointer;
+}
+.popUpChangeFolder {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  height: 600px;
+  width: 500px;
+  overflow: auto; // Enable scrolling if content exceeds the height
+  .editingTheFolder {
+    font-size: 35px;
+  }
+  .name {
+    margin-right: 390px;
+  }
+  .inputForChangingFolder {
+    margin-right: 40px;
+    border-radius: 6px;
+    height: 25px;
+    width: 380px;
+    border: 2.5px solid rgb(231, 164, 175);
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 0 0 2px pink;
+  }
+  .divForCheckBoxForFolders {
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin-top: 20px;
+    margin-right: 220px;
+  }
+  .keepTheFolderHiddenInFolders {
+    font-size: 20px;
+  }
+}
